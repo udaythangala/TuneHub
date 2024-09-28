@@ -5,6 +5,37 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Greeting from Tune_Hub</h1>
+    <h1>Greeting from Tune_Hub</h1>
+    <a href="register.html">Register Here</a>
+    <form action="register" method="post">
+        <label>User name : <input type="text" name="username" /> </label>
+        <br>
+        <label>Email :  <input type="email" name="email" /></label>
+        <br>
+        <label>Password :  <input type="password" name="password" /></label>
+        <br>
+        <label>Gender : </label>
+        M<label>
+        <input type="radio" name="gender"  value="Male"/>
+    </label>
+        F<label>
+        <input type="radio" name="gender"  value="Female"/>
+    </label>
+        O<label>
+        <input type="radio" name="gender"  value="Others"/>
+    </label>
+        <br>
+        <label>Role : </label>
+        Admin<label>
+        <input type="radio" name="role"  value="admin"/>
+    </label>
+        Customer<label>
+        <input type="radio" name="role"  value="customer"/>
+    </label>
+        <br>
+        <label>Address : <textarea name="address"></textarea></label>
+        <br>
+        <input type = "submit"/>
+    </form>
 </body>
 </html>

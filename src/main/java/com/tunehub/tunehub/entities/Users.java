@@ -1,11 +1,14 @@
 package com.tunehub.tunehub.entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class users {
+public class Users {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
     String username;
     String email;
@@ -14,11 +17,11 @@ public class users {
     String role;
     String address;
 
-    public users() {
+    public Users() {
         super();
     }
 
-    public users(int id, String username, String email, String password, String gender, String role, String address) {
+    public Users(int id, String username, String email, String password, String gender, String role, String address) {
         super();
         this.id = id;
         this.username = username;
