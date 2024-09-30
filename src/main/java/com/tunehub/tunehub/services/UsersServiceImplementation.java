@@ -16,4 +16,15 @@ public class UsersServiceImplementation implements UsersService {
         repo.save(user);
         return "user added successfully";
     }
+
+    @Override
+    public boolean emailExists(String email) {
+
+        if(repo.findByEmail(email) == null){
+            return false;
+        } else{
+            return true;
+        }
+    }
+
 }
