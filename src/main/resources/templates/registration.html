@@ -5,33 +5,28 @@
     <title>Title</title>
 </head>
 <body>
+    <h1>User Registration: </h1>
     <form action="register" method="post">
-        <label>User name : <input type="text" name="username" /> </label>
+        <label>User name :  </label>
+        <input type="text" name="username"/>
         <br>
-        <label>Email :  <input type="email" name="email" /></label>
+        <label>Email :  </label>
+        <input type="email" name="email"/>
         <br>
-        <label>Password :  <input type="password" name="password" /></label>
+        <label>Password :  </label>
+        <input type="password" name="password"/>
         <br>
         <label>Gender : </label>
-        M<label>
-        <input type="radio" name="gender"  value="Male"/>
-    </label>
-        F<label>
-        <input type="radio" name="gender"  value="Female"/>
-    </label>
-        O<label>
-        <input type="radio" name="gender"  value="Others"/>
-    </label>
+        Male<input type="radio" name="gender"  value="Male"/>
+        Female<input type="radio" name="gender"  value="Female"/>
+        Others<input type="radio" name="gender"  value="Others"/>
         <br>
         <label>Role : </label>
-        Admin<label>
-        <input type="radio" name="role"  value="admin"/>
-    </label>
-        Customer<label>
-        <input type="radio" name="role"  value="customer"/>
-    </label>
+        Admin<input type="radio" name="role"  value="admin"/>
+        Customer<input type="radio" name="role"  value="customer"/>
         <br>
-        <label>Address : <textarea name="address"></textarea></label>
+        <label>Address : </label>
+        <textarea name="address"></textarea>
         <br>
         <input type = "submit"/>
     </form>
