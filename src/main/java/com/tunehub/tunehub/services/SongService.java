@@ -10,4 +10,7 @@ public interface SongService {
     public List<Song> fetchAllSongs();
 
     public boolean songExists(String name);
+
+    public void updateSong(Song song);
+
 }

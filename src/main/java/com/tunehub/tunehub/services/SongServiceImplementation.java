@@ -27,5 +27,10 @@ public class SongServiceImplementation implements SongService {
         return (repo.findByName(name) != null);
     }
 
+    @Override
+    public void updateSong(Song song) {
+        repo.save(song);
+    }
+
 
 }
